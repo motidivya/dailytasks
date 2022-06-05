@@ -1,0 +1,46 @@
+body{
+    background-color: #ffffcc;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.heading{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    color: #fffecb;
+    background-color: #990000;
+    border-bottom: #cc0000 solid 10px;
+    font-style: italic;
+    letter-spacing: 10px;
+}
+
+h2{
+    background-color: #009900;
+    color: #f4faf4;
+    padding-left: 10px;
+}
+
+li{
+    color: #b44335;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    height: 150px;
+    width: auto;
+    border: #dcdccc 4px dashed;
+}
+
+h3{
+    color: #b5b5a7;
+}
+
+table{
+    background-color: #cccccc;
+}
