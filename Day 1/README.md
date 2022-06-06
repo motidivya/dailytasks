@@ -1,6 +1,4 @@
-# Task 1 
-
-(Always In Remembrance of moti❤)
+# Task 1
 
 #### Sources: 
 - [Retweet Icon by](https://iconscout.com/icons/retpost) by [Brent Jackson](https://iconscout.com/contributors/brent-jackson)
