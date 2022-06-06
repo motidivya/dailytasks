@@ -3,8 +3,8 @@ body{
 }
 .container {
     display: grid;
-    height: 300px;
-    width: 20%;
+    height: 800px;
+    width: 50%;
     grid-template-areas:
     "h h h h h h h h h h h"
     "s s s c1 c1 c1 c1 c1 c1 c1 c1"
@@ -12,7 +12,7 @@ body{
     "s s s c2 c2 c2 c2 c3 c3 c3 c3"
     "s s s c2 c2 c2 c2 c3 c3 c3 c3"
     "f f f f f f f f f f f";
-    grid-gap:2px;
+    grid-gap:3px;
 }
 
 .container>*{
@@ -20,7 +20,7 @@ body{
     border: 1px solid black;
     justify-content: center;
     align-items: center;
-    font-size: 10px
+    font-size: 20px
 }
 
 .header{
