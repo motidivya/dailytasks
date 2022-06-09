@@ -1,6 +1,25 @@
 /* Common CSS Starts */
 
-
+@font-face {
+    font-family: QuicksandBold;
+    src: url(../quicksand/static/Quicksand-Bold.ttf);
+}
+@font-face {
+    font-family: QuicksandLight;
+    src: url(../quicksand/static/Quicksand-Light.ttf);
+}
+@font-face {
+    font-family: QuicksandMedium;
+    src: url(../quicksand/static/Quicksand-Medium.ttf);
+}
+@font-face {
+    font-family: QuicksandRegular;
+    src: url(../quicksand/static/Quicksand-Regular.ttf);
+}
+@font-face {
+    font-family: QuicksandSemibold;
+    src: url(../quicksand/static/Quicksand-SemiBold.ttf);
+}
 html, body{
     margin: 0;
     width: 100%;
@@ -8,6 +27,7 @@ html, body{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: QuicksandMedium;
 }
 
 header{
@@ -25,9 +45,16 @@ header{
     align-items: center;
     margin: 0;
     padding: 0;
-    height: 100%;
+    background: url(../header-pattern-svg.svg) overlay transparent 0% 0%;
 }
-
+.layer{
+    position: absolute;
+    background-color: #0e2946;
+    height: 56px;
+    width: 100%;
+    z-index: -5;
+    opacity: 0.7;
+}
 .navigation{
     display: flex;
     height:56px;
@@ -42,6 +69,7 @@ header{
     margin: 0 16px;
     justify-content: center;
     align-items: center;
+    font-family: QuicksandMedium;
 }
 
 .icons{
@@ -69,7 +97,6 @@ header{
     height: 100%;
     width: 32px;
     border-radius: 50%;
-    border: solid 1px #8DDC97;
 }
 
 .badge{
@@ -126,7 +153,6 @@ header{
 
 .container{
     margin: 24px;
-    border: solid 1px black;
 }
 
 .header-tab{
@@ -163,7 +189,6 @@ header{
 
 .courses{
     display: grid;
-    border: solid 1px black;
     grid-template-columns: repeat(auto-fit, minmax(476px, 1fr));
     grid-template-rows: repeat(auto, minmax(246px, 1fr));
     grid-auto-rows: 246px;
@@ -197,7 +222,6 @@ header{
     margin-left: 24px;
 }
 .item {
-    border: 1px solid black;
     padding: 24px 24px 9px 24px;
 }
 
@@ -232,6 +256,7 @@ header{
 }
 .course-details{
     margin-left: 16px;
+    width: 100%;
 }
 .star{
     margin:0;
@@ -259,7 +284,7 @@ header{
     color: #1F7A54;
 }
 .class{
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     margin-bottom: 8px;
@@ -286,6 +311,15 @@ header{
     align-items: flex-end;
     border-top: 1px solid rgba(0, 0, 0, 0.12);
     margin-top: 16px;
+}
+
+.item:nth-child(3) > .course-navigation{
+    display: flex;
+    justify-content: space-around;
+    height: 33px;
+    align-items: flex-end;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin-top: 4px;
 }
 
 .disabled{
@@ -316,7 +350,6 @@ footer{
     bottom: 0;
     margin-top: auto;
     margin-bottom: 0;
-    position: absolute;
 }
 
 .bottom-navbar{

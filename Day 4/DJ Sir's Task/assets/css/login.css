@@ -1,66 +1,53 @@
-@font-face {
-    font-family: "Quicksand";
-    src: url(../quicksand/static/Quicksand-Bold.ttf) format('tff');
-    font-style: bold;
-    font-display: optional;
-}
 
 @font-face {
-    font-family: "Quicksand";
-    src: url(../quicksand/static/Quicksand-Light.ttf) format('tff');
-    font-style: normal;
-    font-display: optional;
-}
-
-@font-face {
-    font-family: "Quicksand";
-    src: url(../quicksand/static/Quicksand-Medium.ttf) format('tff');
-    font-style: medium;
-    font-display: optional;
+    font-family: QuicksandBold;
+    src: url(../quicksand/static/Quicksand-Bold.ttf);
 }
 @font-face {
-    font-family: "Quicksand";
-    src: url(../quicksand/static/Quicksand-Regular.ttf) format('tff');
-    font-style: normal;
-    font-display: optional;
+    font-family: QuicksandLight;
+    src: url(../quicksand/static/Quicksand-Light.ttf);
 }
-
 @font-face {
-    font-family: "Quicksand";
-    src: url(../quicksand/static/Quicksand-SemiBold.ttf) format('tff');
-    font-style: semi-bold;
-    font-display: optional;
+    font-family: QuicksandMedium;
+    src: url(../quicksand/static/Quicksand-Medium.ttf);
 }
-
 @font-face {
-    font-family: "Quicksand";
-    src: url(../quicksand/Quicksand-VariableFont_wght.ttf) format('tff');
-    font-style: bold;
-    font-display: optional;
+    font-family: QuicksandRegular;
+    src: url(../quicksand/static/Quicksand-Regular.ttf);
 }
-
-
+@font-face {
+    font-family: QuicksandSemibold;
+    src: url(../quicksand/static/Quicksand-SemiBold.ttf);
+}
 
 html, body{
     margin: 0;
     width: 100%;
     height: 100%;
+    font-family: QuicksandMedium;
 }
 
 body{
     padding: 0;
-    font-family: "Quicksand";
+    font-family: QuicksandMedium;
     width: 100%;
 }
 
 .navbar{
-    background: url(../header-pattern-svg.svg);
+    background: url(../header-pattern-svg.svg) no-repeat transparent 0% 0% ;
     opacity: 0.8;
     mix-blend-mode: overlay;
     width: 100%;
     height: 56px;
 }
-
+.layer{
+    position: absolute;
+    background-color: #212c38;
+    height: 56px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
 .header-logo{
     margin: 10.5px auto 9.5px 24px;
 }
@@ -92,7 +79,7 @@ body{
     margin: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Quicksand-Bold';
+    font-family: 'QuicksandMedium';
 }
 
 .heading{
