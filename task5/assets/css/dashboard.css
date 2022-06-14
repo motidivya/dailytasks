@@ -1,0 +1,495 @@
+/* Common CSS Starts */
+
+@font-face {
+    font-family: QuicksandBold;
+    src: url(../quicksand/static/Quicksand-Bold.ttf);
+}
+@font-face {
+    font-family: QuicksandLight;
+    src: url(../quicksand/static/Quicksand-Light.ttf);
+}
+@font-face {
+    font-family: QuicksandMedium;
+    src: url(../quicksand/static/Quicksand-Medium.ttf);
+}
+@font-face {
+    font-family: QuicksandRegular;
+    src: url(../quicksand/static/Quicksand-Regular.ttf);
+}
+@font-face {
+    font-family: QuicksandSemibold;
+    src: url(../quicksand/static/Quicksand-SemiBold.ttf);
+}
+/* --------------------------------------------------------------- */
+/* .container4{
+    height: 40px;
+    margin-top: 20px;
+    border:  10px solid rgb(138, 79, 40);
+    text-align: center;
+}
+.item-link{
+    background-color: yellow;
+    width: 200px;
+    border: 3px solid rgb(255, 145, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 5%;
+}
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0; */
+    /* display: -webkit-box;      OLD - iOS 6-, Safari 3.1-6 */
+    /* display: -moz-box;         OLD - Firefox 19- (buggy but mostly works) */
+    /* display: -ms-flexbox;      TWEENER - IE 10 */
+    /* display: -webkit-flex;     NEW - Chrome */
+    /* display: flex;             NEW, Spec - Opera 12.1, Firefox 20+ */
+/* } */
+/* .menu ul a {
+    width: 20%;
+    height: 34px;
+    color: #222;
+    display: inline-block;
+}
+.menu ul a:hover {
+    background-color: #222;
+    color: #fff;
+}
+#menuToggle, .menu-icon{
+    display: no;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s; */
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    /* }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 9px;
+        background-color: #f1c40f;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px; */
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    /* }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+} */
+
+/* ------------------------------------------------------------------ */
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: QuicksandMedium;
+}
+
+header{
+    background-color: #202b37;
+    width: 100%;
+}
+
+.header-logo{
+    margin: 10.5px auto 9.5px 24px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: url(../header-pattern-svg.svg) overlay transparent 0% 0%;
+}
+.layer{
+    position: absolute;
+    background-color: #0e2946;
+    height: 56px;
+    width: 100%;
+    z-index: -5;
+    opacity: 0.7;
+}
+.navigation{
+    display: flex;
+    height:56px;
+    justify-content: end;
+}
+
+.navigation > *{
+    display: flex;
+    font-size: 18px;
+    color: #3FD28B;
+    text-transform: uppercase;
+    margin: 0 16px;
+    justify-content: center;
+    align-items: center;
+    font-family: QuicksandMedium;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons > * {
+    margin: 0 16px;
+    display: flex;
+    height: 100%;
+}
+
+.navigation > p:nth-child(1){
+    color: #FFFFFF;
+    border-bottom: 4px solid #FFFFFF;
+}
+
+.navigation > img:nth-child(6), .navigation > img:nth-child(7){
+    height: 24px;
+    width: 21px;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -12px;
+    right: -9px;
+    padding: 1px 6px;
+    border-radius: 50%;
+    background: #2a7ff3;
+    color: white;
+    font-size: 15px;
+}
+
+.notification {
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+
+}
+
+.icons > * > span{
+    z-index: 1;
+    display: grid;
+}
+
+.icons > * > img{
+    height: 24px;
+    width: 21px;
+    margin: auto;
+}
+
+.profile > img{
+    height: 32px;
+    width: 32px;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 908px) {
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 0;
+
+    }
+    .navigation p{
+        display: none;
+    }
+    .icons{
+        margin-right: 0;
+    }
+}
+
+/* Common CSS Ends */
+/* ------------------------------------------------- */
+/* Main CSS Starts */
+
+.container{
+    margin: 24px;
+}
+
+.header-tab{
+    height: 64px;
+    background-color: #8DDC97;
+    display: flex;
+    justify-content: center;
+}
+
+.header-tab-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-tab-heading:nth-child(1){
+    border-bottom: 4px solid black;
+}
+
+.header-tab-heading > img:nth-child(1){
+    height: 32px;
+    width: 21px;
+}
+
+.header-tab-heading > img:nth-child(1){
+    height: 32px;
+    width: 29px;
+}
+
+.header-tab-heading > * {
+    margin: auto 4px;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(476px, 1fr));
+    grid-template-rows: repeat(auto, minmax(246px, 1fr));
+    grid-auto-rows: 246px;
+    margin: 16px 0 32px 0;
+    grid-gap: 24px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0 17px 0;
+}
+.results{
+    margin-top: auto;
+    
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sort > input{
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid #00000031;
+}
+.sort > img:nth-child(3){
+    border-bottom: 1px solid #00000031;
+}
+.sort > img:nth-child(4){
+    margin-left: 24px;
+}
+.item {
+    padding: 24px 24px 9px 24px;
+}
+
+.item:nth-child(4){
+    padding-top: 0;
+    padding-left: 0;
+}
+.item:nth-child(4) > .course-content, .item:nth-child(4) > .course-navigation{
+    padding-left: 0;
+    margin-left: 24px;
+}
+.expired{
+    background-color: #FFFFFF;
+    margin-bottom: 6px;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.expired > p{
+    background-color: #FFE4E6 ;
+    color: #D80000;
+    margin: 0;
+    
+}
+.subject, .subject-details, .course-content, .class-details, .class{
+    display: flex;
+}
+.course-heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.course-details{
+    margin-left: 16px;
+    width: 100%;
+}
+.star{
+    margin:0;
+    padding: 0;
+    height: 24px;
+    width: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.course-heading > h3{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 7px 0;
+}
+.subject{
+    margin: 0 auto 7px 0;
+}
+.subject > *, .subject-details > *{
+    margin: 0 6px 0 0;
+}
+.subject-details{
+    margin: 0 auto 18px 0;
+}
+.subject > p:nth-child(3){
+    color: #1F7A54;
+}
+.class{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.class > img{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+}
+.class > input{
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    display: flex;
+    width: 100%;
+}
+.class-details > p:nth-child(1){
+    margin-right: 17px;
+}
+.class-details > *{
+    margin-top:0;
+    margin-bottom:0;
+}
+.course-navigation {
+    display: flex;
+    justify-content: space-around;
+    height: 33px;
+    align-items: flex-end;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin-top: 16px;
+}
+
+.item:nth-child(3) > .course-navigation{
+    display: flex;
+    justify-content: space-around;
+    height: 33px;
+    align-items: flex-end;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin-top: 4px;
+}
+
+.disabled{
+    opacity: 40%;
+}
+/* Main CSS Ends */
+/* -------------------------------------------------- */
+/* Footer CSS */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    color: #1F7A54;
+    margin-bottom: 16px;
+}
+
+.contact > p:nth-child(2){
+    margin: 0 0 0 18px;
+}
+
+.contact > p:nth-child(1){
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    height: 74px;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.bottom-navbar{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #e0e1e1;
+}
+
+.bottom-navbar > img{
+    height: 24px;
+    margin-right: 16px;
+    align-self: center;
+}
+
+.bottom-navbar > p:nth-child(1){
+    height: 24px;
+    color: #0000001F;
+    align-self: center;
+}
+
+.bottom-navbar > p:nth-child(2){
+    font-size: 12px;
+    margin: 0 16px 0 0 ;
+    align-self: center;
+}
+
+.bottom-navbar > p:nth-child(3){
+    font-size: 12px;
+    margin: 0 8px 0 0;
+    align-self: center;
+}
+
+.bottom-navbar > p:nth-child(4){
+    font-size: 12px;
+    margin: 0 8px 0 0;
+    align-self: center;
+}
+
+.bottom-navbar > p:nth-child(5){
+    font-size: 12px;
+    margin: 0 8px 0 0;
+    align-self: center;
+}
