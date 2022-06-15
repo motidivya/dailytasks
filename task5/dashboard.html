@@ -15,7 +15,7 @@
                     <img src="assets/icons/logo-used-in-header.svg" alt="Header Logo" class="header-logo">
                 </div>
                 <div class="navigation" id="menu">
-                    <p>Dashboard</p>
+                    <p class="active">Dashboard</p>
                     <p>Content</p>
                     <p>Users</p>
                     <p>Reports</p>
@@ -89,7 +89,7 @@
         <main>
             <div class="container">
                 <div class="header-tab">
-                    <div class="header-tab-heading">
+                    <div class="header-tab-heading active-tab">
                         <img src="assets/icons/courses.svg" alt="Courses icon">
                         <h2>4</h2>
                         <h3>Courses</h3>
@@ -110,6 +110,49 @@
                     </div>
                 </div>
                 <div class="courses">
+
+                    <!-- Generic Course Starts -->
+                    <div class="item">
+                        <div class="expired">
+                            <p>Expired</p>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-image">
+                                <img src="assets/images/imageMask-1.svg" alt="Course1 Description image">
+                            </div>
+                            <div class="course-details">
+                                <div class="course-heading">
+                                    <h3>Course name</h3>
+                                    <img class = "star" src="assets/icons/favourite.svg" alt="Favourite Icon">
+                                </div>
+                                <div class="subject">
+                                    <p>Subject name</p>
+                                    <p>Grade Grade_marks</p>
+                                    <p>additional_marks</p>
+                                </div>
+                                <div class="subject-details">
+                                    <p><strong>number_of_units</strong> Units</p>
+                                    <p><strong>number_of_lessons</strong> Lessons</p>
+                                    <p><strong>number_of_topics</strong> Topics</p>
+                                </div>
+                                <div class="class">
+                                    <input type="text" name="class" id="class" placeholder="No Classes" value="Class Teacher name">
+                                    <img src="assets/icons/arrow-down.svg" alt="Arrow down icon">
+                                </div>
+                                <div class="class-details">
+                                    <p>50 Students</p>
+                                    <p>21-jan-2020-21-Aug-2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-navigation">
+                            <img src="assets/icons/preview.svg" alt="Preview Icon">
+                            <img src="assets/icons/manage-course.svg" alt="manage Course">
+                            <img src="assets/icons/grade-submissions.svg" alt="Grade Submissions">
+                            <img src="assets/icons/reports.svg" alt="Reports Icon">
+                        </div>
+                    </div>
+                    <!-- Generic Course Ends -->
 
                     <!-- Course 1 Start -->
                     <div class="item">
@@ -293,6 +336,7 @@
             </div>
         </footer>
         <!-- Footer End -->
+        <link rel="stylesheet" href="assets/js/dashboard.js">
         <script src="assets/js/dashboard.js"></script>
     </body>
 </html>

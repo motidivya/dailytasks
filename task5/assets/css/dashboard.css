@@ -166,6 +166,7 @@ header{
     justify-content: center;
     align-items: center;
     font-family: QuicksandMedium;
+    user-select: none;
 }
 
 .icons{
@@ -178,7 +179,7 @@ header{
     height: 100%;
 }
 
-.navigation > p:nth-child(1){
+.active{
     color: #FFFFFF;
     border-bottom: 4px solid #FFFFFF;
 }
@@ -187,7 +188,6 @@ header{
     height: 24px;
     width: 21px;
 }
-
 .notification .badge {
     position: absolute;
     top: -12px;
@@ -217,7 +217,10 @@ header{
     width: 21px;
     margin: auto;
 }
-
+.icons > * > img:hover{
+    height: 30px;
+    width: 27px;
+}
 .profile > img{
     height: 32px;
     width: 32px;
@@ -266,7 +269,7 @@ header{
     width: 100%;
 }
 
-.header-tab-heading:nth-child(1){
+.active-tab{
     border-bottom: 4px solid black;
 }
 
