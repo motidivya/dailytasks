@@ -4,94 +4,109 @@ window.onload = ()=>{
         navbarButtons.push(document.querySelector(`.navigation p:nth-child(${i})`));
     }
 
-    navbarButtons[0].addEventListener('click', ()=>{
-        if(navbarButtons[0].hasAttribute('class') && navbarButtons[0].getAttribute('class') === 'active'){
-            // navbarButtons[0].setAttribute('class', '');
-        }else{
-            navbarButtons[0].setAttribute('class', 'active');
-            navbarButtons[1].setAttribute('class', '');
-            navbarButtons[2].setAttribute('class', '');
-            navbarButtons[3].setAttribute('class', '');
-            navbarButtons[4].setAttribute('class', '');
-        }
-    });
-    navbarButtons[1].addEventListener('click', ()=>{
-        if(navbarButtons[1].hasAttribute('class') && navbarButtons[1].getAttribute('class') === 'active'){
-            navbarButtons[1].setAttribute('class', '');
-        }else{
-            navbarButtons[1].setAttribute('class', 'active');
-            navbarButtons[0].setAttribute('class', '');
-            navbarButtons[2].setAttribute('class', '');
-            navbarButtons[3].setAttribute('class', '');
-            navbarButtons[4].setAttribute('class', '');
-        }
-    });
-    navbarButtons[2].addEventListener('click', ()=>{
-        if(navbarButtons[2].hasAttribute('class') && navbarButtons[2].getAttribute('class') === 'active'){
-            navbarButtons[2].setAttribute('class', '');
-        }else{
-            navbarButtons[2].setAttribute('class', 'active');
-            navbarButtons[1].setAttribute('class', '');
-            navbarButtons[0].setAttribute('class', '');
-            navbarButtons[3].setAttribute('class', '');
-            navbarButtons[4].setAttribute('class', '');
-        }
-    });
-    navbarButtons[3].addEventListener('click', ()=>{
-        if(navbarButtons[3].hasAttribute('class') && navbarButtons[3].getAttribute('class') === 'active'){
-            navbarButtons[3].setAttribute('class', '');
-        }else{
-            navbarButtons[3].setAttribute('class', 'active');
-            navbarButtons[1].setAttribute('class', '');
-            navbarButtons[2].setAttribute('class', '');
-            navbarButtons[0].setAttribute('class', '');
-            navbarButtons[4].setAttribute('class', '');
-        }
-    });
-    navbarButtons[4].addEventListener('click', ()=>{
-        if(navbarButtons[4].hasAttribute('class') && navbarButtons[4].getAttribute('class') === 'active'){
-            navbarButtons[4].setAttribute('class', '');
-        }else{
-            navbarButtons[4].setAttribute('class', 'active');
-            navbarButtons[1].setAttribute('class', '');
-            navbarButtons[2].setAttribute('class', '');
-            navbarButtons[3].setAttribute('class', '');
-            navbarButtons[0].setAttribute('class', '');
-        }
-    });
-    
-    var bookButtons = [];
-    for(var i = 1; i<=2; i++){
-        bookButtons.push(document.querySelector(`.header-tab div:nth-child(${i})`));
+    // navbarButtons[0].addEventListener('click', ()=>{
+    //     if(navbarButtons[0].hasAttribute('class') && navbarButtons[0].getAttribute('class') === 'active'){
+    //         // navbarButtons[0].setAttribute('class', '');
+    //     }else{
+    //         navbarButtons[0].setAttribute('class', 'active');
+    //         navbarButtons[1].setAttribute('class', '');
+    //         navbarButtons[2].setAttribute('class', '');
+    //         navbarButtons[3].setAttribute('class', '');
+    //         navbarButtons[4].setAttribute('class', '');
+    //     }
+    // });
+    // navbarButtons[1].addEventListener('click', ()=>{
+    //     if(navbarButtons[1].hasAttribute('class') && navbarButtons[1].getAttribute('class') === 'active'){
+    //         navbarButtons[1].setAttribute('class', '');
+    //     }else{
+    //         navbarButtons[1].setAttribute('class', 'active');
+    //         navbarButtons[0].setAttribute('class', '');
+    //         navbarButtons[2].setAttribute('class', '');
+    //         navbarButtons[3].setAttribute('class', '');
+    //         navbarButtons[4].setAttribute('class', '');
+    //     }
+    // });
+    // navbarButtons[2].addEventListener('click', ()=>{
+    //     if(navbarButtons[2].hasAttribute('class') && navbarButtons[2].getAttribute('class') === 'active'){
+    //         navbarButtons[2].setAttribute('class', '');
+    //     }else{
+    //         navbarButtons[2].setAttribute('class', 'active');
+    //         navbarButtons[1].setAttribute('class', '');
+    //         navbarButtons[0].setAttribute('class', '');
+    //         navbarButtons[3].setAttribute('class', '');
+    //         navbarButtons[4].setAttribute('class', '');
+    //     }
+    // });
+    // navbarButtons[3].addEventListener('click', ()=>{
+    //     if(navbarButtons[3].hasAttribute('class') && navbarButtons[3].getAttribute('class') === 'active'){
+    //         navbarButtons[3].setAttribute('class', '');
+    //     }else{
+    //         navbarButtons[3].setAttribute('class', 'active');
+    //         navbarButtons[1].setAttribute('class', '');
+    //         navbarButtons[2].setAttribute('class', '');
+    //         navbarButtons[0].setAttribute('class', '');
+    //         navbarButtons[4].setAttribute('class', '');
+    //     }
+    // });
+    // navbarButtons[4].addEventListener('click', ()=>{
+    //     if(navbarButtons[4].hasAttribute('class') && navbarButtons[4].getAttribute('class') === 'active'){
+    //         navbarButtons[4].setAttribute('class', '');
+    //     }else{
+    //         navbarButtons[4].setAttribute('class', 'active');
+    //         navbarButtons[1].setAttribute('class', '');
+    //         navbarButtons[2].setAttribute('class', '');
+    //         navbarButtons[3].setAttribute('class', '');
+    //         navbarButtons[0].setAttribute('class', '');
+    //     }
+    // });
+
+    // For loop try
+    for(var j = 0;j<5;j++){
+        navbarButtons[j].addEventListener('click', ()=>{
+            if(navbarButtons[j].hasAttribute('class') && navbarButtons[j].getAttribute('class') === 'active'){
+                navbarButtons[j].setAttribute('class', '');
+            }else{
+                navbarButtons[j].setAttribute('class', 'active');
+                navbarButtons[(1+j)%5].setAttribute('class', '');
+                navbarButtons[(2+j)%5].setAttribute('class', '');
+                navbarButtons[(3+j)%5].setAttribute('class', '');
+                navbarButtons[(0+j)%5].setAttribute('class', '');
+            }
+        });
     }
+    
+    // var bookButtons = [];
+    // for(var i = 1; i<=2; i++){
+    //     bookButtons.push(document.querySelector(`.header-tab div:nth-child(${i})`));
+    // }
 
-    bookButtons[0].addEventListener('click', ()=>{
-        if(bookButtons[0].classList.contains('active-tab')){
-            bookButtons[0].classList.remove('active-tab');
-        }else{
-            bookButtons[0].classList.add('active-tab');
-            bookButtons[1].classList.remove('active-tab');
-        }
-    });
+    // bookButtons[0].addEventListener('click', ()=>{
+    //     if(bookButtons[0].classList.contains('active-tab')){
+    //         bookButtons[0].classList.remove('active-tab');
+    //     }else{
+    //         bookButtons[0].classList.add('active-tab');
+    //         bookButtons[1].classList.remove('active-tab');
+    //     }
+    // });
 
-    bookButtons[1].addEventListener('click', ()=>{
-        if(bookButtons[1].classList.contains('active-tab')){
-            bookButtons[1].classList.remove('active-tab');
-        }else{
-            bookButtons[1].classList.add('active-tab');
-            bookButtons[0].classList.remove('active-tab');
-        }
-    });
+    // bookButtons[1].addEventListener('click', ()=>{
+    //     if(bookButtons[1].classList.contains('active-tab')){
+    //         bookButtons[1].classList.remove('active-tab');
+    //     }else{
+    //         bookButtons[1].classList.add('active-tab');
+    //         bookButtons[0].classList.remove('active-tab');
+    //     }
+    // });
     
     // JSON Parsing Starts
-    fetch("../../data.json").then(response => {
-        return response.json();
-    }).then(data => useData(data));
-     function useData(data){
-        for(course of data.courses){
-            console.log(course.name);
-        }
-    }
+    // fetch("../../data.json").then(response => {
+    //     return response.json();
+    // }).then(data => useData(data));
+    //  function useData(data){
+    //     for(course of data.courses){
+    //         console.log(course.name);
+    //     }
+    // }
     // JSON Parsing Ends
 
 }
