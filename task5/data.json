@@ -19,7 +19,6 @@
             "manage":true,
             "grade_submissions":true,
             "reports":true,
-            "favourite":true,
             "expired":false
         },
         {
@@ -41,7 +40,6 @@
             "manage":false,
             "grade_submissions":false,
             "reports":true,
-            "favourite":true,
             "expired":false
         },
         {
@@ -55,7 +53,7 @@
             "units":5,
             "lessons":16,
             "topics":22,
-            "classes":["Teacher's Class A", "Teacher's Class B"],
+            "classes":["All Classes", "Teacher's Class A", "Teacher's Class B"],
             "students":300,
             "start_date":"",
             "end_date":"",
@@ -63,7 +61,6 @@
             "manage":false,
             "grade_submissions":false,
             "reports":true,
-            "favourite":true,
             "expired":false
         },
         {
@@ -85,7 +82,6 @@
             "manage":true,
             "grade_submissions":true,
             "reports":true,
-            "favourite":false,
             "expired":true
         }
     
