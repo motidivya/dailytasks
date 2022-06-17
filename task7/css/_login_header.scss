@@ -1,0 +1,24 @@
+header{
+    background-color: #202b37;
+    width: 100%;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background: url(../header-pattern-svg.svg) overlay transparent 0% 0%;
+        .layer{
+            position: absolute;
+            background-color: #0e2946;
+            height: 56px;
+            width: 100%;
+            z-index: -5;
+            opacity: 0.7;
+        }
+        img{
+            margin: 10.5px auto 9.5px 24px;
+
+        }
+    }
+}

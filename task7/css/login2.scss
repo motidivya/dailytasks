@@ -1,0 +1,27 @@
+@import './font';
+
+html{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: QuicksandMedium;
+    body{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: QuicksandMedium;
+        
+        @import './login_header';
+
+        @import './main_login';
+        
+        @import './footer';
+
+    }
+}

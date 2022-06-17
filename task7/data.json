@@ -1,0 +1,89 @@
+{
+    "courses":[
+        {
+            "name": "Acceleration",
+            "subject": {
+                "name":"Physics",
+                "grade":7,
+                "additional_points":2
+            },
+            "image":"assets/images/imageMask-1.svg",
+            "units":4,
+            "lessons":18,
+            "topics":24,
+            "classes":["Mr. Frank's Class B"],
+            "students":50,
+            "start_date":"21-Jan-2020",
+            "end_date":"21-Aug-2020",
+            "preview":true,
+            "manage":true,
+            "grade_submissions":true,
+            "reports":true,
+            "expired":false
+        },
+        {
+            "name": "Displacement, Velocity and Speed",
+            "subject": {
+                "name":"Physics 2",
+                "grade":6,
+                "additional_points":3
+            },
+            "image":"assets/images/imageMask-2.svg",
+            "units":2,
+            "lessons":15,
+            "topics":20,
+            "classes":[],
+            "students":0,
+            "start_date":"",
+            "end_date":"",
+            "preview":true,
+            "manage":false,
+            "grade_submissions":false,
+            "reports":true,
+            "expired":false
+        },
+        {
+            "name": "Introduction to Biology:Micro organisms and how they affect the environment",
+            "subject": {
+                "name":"Biology",
+                "grade":4,
+                "additional_points":1
+            },
+            "image":"assets/images/imageMask.svg",
+            "units":5,
+            "lessons":16,
+            "topics":22,
+            "classes":["All Classes", "Teacher's Class A", "Teacher's Class B"],
+            "students":300,
+            "start_date":"",
+            "end_date":"",
+            "preview":true,
+            "manage":false,
+            "grade_submissions":false,
+            "reports":true,
+            "expired":false
+        },
+        {
+            "name": "Introduction to High School Mathematics",
+            "subject": {
+                "name":"Mathematics",
+                "grade":8,
+                "additional_points":3
+            },
+            "image":"assets/images/imageMask-3.svg",
+            "units":4,
+            "lessons":18,
+            "topics":24,
+            "classes":["Mr. Frank's Class A", "Teacher's Class B"],
+            "students":44,
+            "start_date":"14-Oct-2019",
+            "end_date":"20-Oct-2020",
+            "preview":true,
+            "manage":true,
+            "grade_submissions":true,
+            "reports":true,
+            "expired":true
+        }
+    
+    ]
+}

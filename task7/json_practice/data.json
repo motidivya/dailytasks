@@ -1,0 +1,22 @@
+{
+    "projects":[
+        {
+            "name": "Project 1",
+            "client": "Client 1",
+            "summary": "Lorem ipsum",
+            "technologystack": ["NodeJS", "AngularJS", "Bootstrap"]
+        },
+        {
+            "name": "Project 2",
+            "client": "Client 2",
+            "summary": "Lorem ipsum",
+            "technologystack": ["NodeJS2", "AngularJS2", "Bootstrap2"]
+        },
+        {
+            "name": "Project 3",
+            "client": "Client 4",
+            "summary": "Lorem ipsum",
+            "technologystack": ["NodeJS3", "AngularJS3", "Bootstrap3"]
+        }
+    ]
+}
