@@ -1,6 +1,9 @@
 # dailytasks
 Here will be all the daily tasks that i get.
 
+## Task 6 (Thursday 16th June 2021)
+![image](https://user-images.githubusercontent.com/106810540/174226042-c613d556-ee30-4850-b415-108daded691e.png)
+
 ## Task 5 (Monday 13th June 2022)
 https://user-images.githubusercontent.com/106810540/174090749-f234f71c-cfb4-47b8-8a28-92d49ab6f0ac.mp4
 
