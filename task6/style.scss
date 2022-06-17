@@ -1,0 +1,10 @@
+$primaryBtn : rgb(39, 155, 84);
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    color: $primaryBtn;
+}
