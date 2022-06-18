@@ -1,0 +1,97 @@
+header{
+    background-color: #202b37;
+    width: 100%;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background: url(../header-pattern-svg.svg) overlay transparent 0% 0%;
+        .branding{
+            .header-logo{
+                margin: 10.5px auto 9.5px 24px;
+            }
+        }
+        .navigation{
+            display: flex;
+            height:56px;
+            justify-content: end;
+            &:nth-child(1){
+                color: #FFFFFF;
+                border-bottom: 4px solid #FFFFFF;
+            }
+            &:nth-child(6), &:nth-child(7){
+                height: 24px;
+                width: 21px;
+            }
+            p{
+                display: flex;
+                font-size: 18px;
+                color: #3FD28B;
+                text-transform: uppercase;
+                margin: 0 16px;
+                justify-content: center;
+                align-items: center;
+                font-family: QuicksandMedium;
+                @media screen and (max-width:908px) {
+                    display: none;
+                }
+            }
+            .icons{
+                display: flex;
+                @media screen and (max-width:908px){
+                    margin-right: 0;
+                }
+                .notification{
+                    margin: 0 16px;
+                    display: flex;
+                    height: 100%;
+                    color: white;
+                    position: relative;
+                    display: inline-block;
+                    margin-top: 25px;
+                    img{
+                        height: 24px;
+                        width: 21px;
+                        margin: auto;
+                        .badge{
+                            position: absolute;
+                            top: -12px;
+                            right: -9px;
+                            padding: 1px 6px;
+                            border-radius: 50%;
+                            background: #2a7ff3;
+                            color: white;
+                            font-size: 15px;
+                            z-index: 1;
+                            display: grid;
+                        }
+                    }
+                }
+                .profile{
+                    margin: 0 16px;
+                    display: flex;
+                    height: 100%;
+                    img{
+                        height: 32px;
+                        width: 32px;
+                    }
+                }
+                .hamburger{
+                    margin: 0 16px;
+                    display: flex;
+                    height: 100%;
+                    display: none;
+                    @media screen and (max-width: 908px) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 10px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
