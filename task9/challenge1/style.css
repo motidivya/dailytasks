@@ -1,0 +1,23 @@
+body{
+    font-family: Roboto;
+}
+
+.navbar{
+    background-color: #0e2957;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li{
+    margin: 5px;
+}

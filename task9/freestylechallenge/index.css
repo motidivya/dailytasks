@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    color: white;
+}
+
+li{
+    margin: 0.5em;
+}
+
+a{
+    text-decoration: none;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+
+}

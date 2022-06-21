@@ -1,0 +1,12 @@
+body {
+    background: #f1ded0;
+}
+
+h1 {
+    border-bottom: 3px solid #c7b9ff;
+    width: fit-content;
+}
+
+select {
+    border: 3px solid #ddeae1;
+}
