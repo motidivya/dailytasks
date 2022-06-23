@@ -1,0 +1,311 @@
+/* Common CSS Starts */
+
+@font-face {
+    font-family: QuicksandBold;
+    src: url(../assets/quicksand/static/Quicksand-Bold.ttf);
+}
+@font-face {
+    font-family: QuicksandLight;
+    src: url(../assets/quicksand/static/Quicksand-Light.ttf);
+}
+@font-face {
+    font-family: QuicksandMedium;
+    src: url(../assets/quicksand/static/Quicksand-Medium.ttf);
+}
+@font-face {
+    font-family: QuicksandRegular;
+    src: url(../assets/quicksand/static/Quicksand-Regular.ttf);
+}
+@font-face {
+    font-family: QuicksandSemibold;
+    src: url(../assets/quicksand/static/Quicksand-SemiBold.ttf);
+}
+
+/* ------------------------------------------------------------------ */
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: QuicksandMedium;
+}
+
+header{
+    background-color: #202b37;
+    width: 100%;
+}
+
+.header-logo{
+    margin: 10.5px auto 9.5px 24px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: url(../header-pattern-svg.svg) overlay transparent 0% 0%;
+}
+.layer{
+    position: absolute;
+    background-color: #0e2946;
+    height: 56px;
+    width: 100%;
+    z-index: -5;
+    opacity: 0.7;
+}
+.navigation{
+    display: flex;
+    height:56px;
+    justify-content: end;
+}
+
+.navigation > *{
+    display: flex;
+    font-size: 18px;
+    color: #3FD28B;
+    margin: 0 16px;
+    justify-content: center;
+    align-items: center;
+    font-family: QuicksandMedium;
+    user-select: none;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons > * {
+    margin: 0 16px;
+    display: flex;
+    height: 100%;
+}
+
+.active{
+    color: #FFFFFF;
+    border-bottom: 4px solid #FFFFFF;
+}
+
+.navigation > img:nth-child(6), .navigation > img:nth-child(7){
+    height: 24px;
+    width: 21px;
+}
+.notification .badge {
+    position: absolute;
+    top: -12px;
+    right: -9px;
+    padding: 1px 6px;
+    border-radius: 50%;
+    background: #2a7ff3;
+    color: white;
+    font-size: 15px;
+}
+
+.notification {
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+
+}
+
+.icons > * > span{
+    z-index: 1;
+    display: grid;
+}
+
+.icons > * > img, svg{
+    height: 24px;
+    width: 21px;
+    margin: auto;
+}
+
+.profile > img{
+    height: 32px;
+    width: 32px;
+}
+
+.hamburger{
+    display: none;
+    margin-right: 0;
+    position: relative;
+    margin: 0;
+}
+svg:focus{
+    outline: none;
+}
+/* .ndetails{
+    display: none;
+    width: 280px;
+    border-radius: 2px;
+    box-shadow: 0px 13px 20px #0000003D;
+    position: absolute;
+    top: 46px;
+    left: -250px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+} */
+
+.adetails, .ndetails{
+    /* display: none; */
+    width: 315px;
+    max-height:582px;
+    border-radius: 2px;
+    box-shadow: 0px 13px 20px #0000003D;
+    position: absolute;
+    top: 46px;
+    left: -290px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    overflow-y: auto;
+}
+/* ============================================================ */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* ======================================================= */
+.h-details{
+    display: none;
+    width: 280px;
+    border-radius: 2px;
+    box-shadow: 0px 13px 20px #0000003D;
+    position: absolute;
+    top: 59px;
+    left: -272px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.h-details ul{
+    margin: 16px 24px 0 16px;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.h-details ul li, .ndetails ul li{
+    min-height: 48px;
+}
+.h-details a{
+    color: #1F7A54;
+
+}
+.adetails ul li, .ndetails ul li{
+    min-height: 114px;
+    text-transform: uppercase;
+    margin: 16px;
+}
+
+.ul-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    display: none;
+}
+
+
+@media screen and (max-width: 908px) {
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 0;
+
+    }
+    .hide{
+        display: none;
+    }
+    .icons{
+        margin-right: 0;
+    }
+}
+.ul-heading span:nth-child(2){
+    transform: rotate(90deg);
+    width: 12px;
+    height: 24px;
+}
+/* Common CSS Ends */
+
+/* =============================================== */
+
+.alert-heading, .alert-details{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: black;
+}
+.alert-from{
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    width: 100%;
+    margin: 0;
+}
+.alert-from p{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 0;
+}
+.adetails ul, .ndetails ul{
+    padding: 0;
+    margin-bottom: 48px;
+}
+
+.alert-item h4{
+    margin: 0;
+    color: black;
+}
+
+.grey{
+    color:#6E6E6E;
+}
+.alert-status img{
+    border-radius: 50%;
+    margin: 0;
+}
+.alert-status{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.bottom-fixed, .nbottom-fixed{
+    width: 315px;
+    height:48px;
+    position: absolute;
+    top: 580px;
+    left: -290px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    height: 48px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+.bottom-fixed a, .nbottom-fixed a{
+    color: #1F7A54;
+}
