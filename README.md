@@ -1,7 +1,35 @@
 # dailytasks
 Here will be all the daily tasks that i get.
 
-## Task 6 (Thursday 16th June 2021)
+## Task 10 (Friday 24th June 2022)
+
+
+https://user-images.githubusercontent.com/106810540/175399581-a7a461e5-5c68-4a2b-9c07-20c1a305dc5c.mp4
+
+
+
+## Task 9 (Wednesday 22nd June 2022)
+
+
+https://user-images.githubusercontent.com/106810540/175399491-b443bee1-e7e9-4935-a810-b7dcd1e4d94a.mp4
+
+
+
+## Task 8 (Tuesday 21st June 2022)
+
+
+https://user-images.githubusercontent.com/106810540/175399379-6768238d-a6e7-4b4f-afcc-41169eb500a5.mp4
+
+
+
+## Task 7 (Sunday 19th June 2022)
+
+
+https://user-images.githubusercontent.com/106810540/175399207-097fad78-3a23-40e0-bf98-4fdd5df75def.mp4
+
+
+
+## Task 6 (Thursday 16th June 2022)
 ![image](https://user-images.githubusercontent.com/106810540/174226042-c613d556-ee30-4850-b415-108daded691e.png)
 
 ## Task 5 (Monday 13th June 2022)
