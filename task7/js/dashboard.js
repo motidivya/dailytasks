@@ -83,6 +83,39 @@ window.onload = ()=>{
         }
     });
 
+    // ===============================================================
+
+    var hamburgerIcon = document.querySelector('.hamburger img');
+
+    hamburgerIcon.addEventListener('click', ()=>{
+        hamburgerIcon.style.color = 'white';
+        console.log('moti❤')
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // ===============================================================
+
+
     // Data Population With JSON Starts
 
     const requestURL = '../data.json';
