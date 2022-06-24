@@ -150,7 +150,7 @@ svg:focus{
 } */
 
 .adetails, .ndetails{
-    /* display: none; */
+    display: none;
     width: 315px;
     max-height:582px;
     border-radius: 2px;
@@ -208,9 +208,14 @@ a{
     color: #1F7A54;
 
 }
-.adetails ul li, .ndetails ul li{
+.adetails ul li{
     min-height: 114px;
     text-transform: uppercase;
+    margin: 16px;
+}
+
+.ndetails ul li{
+    min-height: 73px;
     margin: 16px;
 }
 
@@ -308,4 +313,21 @@ a{
 
 .bottom-fixed a, .nbottom-fixed a{
     color: #1F7A54;
+}
+
+.font15{
+    font-size: 15px;
+}
+.mybold{
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+}
+a{
+    color: black;
+}
+.m-0{
+    margin: 0;
 }
