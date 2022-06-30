@@ -1,0 +1,38 @@
+html{
+    margin: 0;
+    padding: 0;
+    body{
+        header{
+            display: flex;
+            justify-content: center;
+            .alert-element{
+                // display: none;
+                color: red; 
+            }
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 85vh;
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                width: 200px;
+                border: 4px solid black;
+                .input-username, .submit{
+                    margin: 10px;
+                }
+                
+            }
+        }
+        footer{
+            .second-aria{
+                // display: none;
+                color: green;
+            }
+        }
+    }
+}

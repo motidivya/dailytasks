@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria Live Test</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="alert-element" aria-live="assertive" role="alert">
+            <p><strong>Less Than 8 Elements</strong></p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#">
+                <div class="input-username">
+                    <label for="username" aria-label="username">Input Username</label>
+                    <input type="text" name="username" id="username">
+                </div>    
+                <div class="submit">
+                    <label for="submit" aria-label="submit" hidden>Submit</label>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="second-aria" aria-live="assertive" role="alert">
+            <p><strong>Hello world Lorem Ipsum Hello</strong></p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
