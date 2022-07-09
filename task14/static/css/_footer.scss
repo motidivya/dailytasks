@@ -1,0 +1,41 @@
+footer{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .reach-us{
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        ul{
+            li{
+                margin: 0 8px;
+                a{
+                    color: $base-color;
+                }
+                
+            }
+        }
+    }
+    .basic-details{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #E0E1E1 0% 0% no-repeat padding-box;
+        ul{
+            li{
+                margin: 0 8px;
+            }                    
+            .footertext{
+                color: #616161;
+                font-size: 12px;
+            }
+            .zeussystems{
+                font-family: QuicksandBold;
+            }
+        }
+
+    }
+}

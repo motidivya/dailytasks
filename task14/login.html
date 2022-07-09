@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Quantum</title>
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <a href="#brand" role="link">
+                <object data="assets/icons/logo-used-in-header.svg" type="image/svg+xml"></object>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <div class="content" aria-label="Login Form">
+                    <div class="section-heading" role="heading">
+                        <object data="assets/icons/back.svg" type="image/svg+xml" role="button" aria-label="Back Button"></object>
+                        <div class="loginheading">
+                            <h2>Log in with Quantum</h2>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <ul>
+                            <li>
+                                <object data="assets/icons/radio-button-on.svg" type="image/svg+xml" name="education" role="radio" tabindex="0" aria-checked="true" aria-label="District"></object>
+                                <p>District</p>
+                            </li>
+                            <li>
+                                <object data="assets/icons/radio-button-off.svg" type="image/svg+xml" name="education" role="radio" tabindex="0" aria-checked="false" aria-label="Independent School"></object>
+                                <p>Independent school</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="selectFields">
+                        <label for="#statename"><small>State*</small></label>
+                        <select id="statename" required>
+                            <option value="Alabama" selected>Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                        </select>
+                    </div>
+                    <div class="selectFields">
+                        <label for="#districtname"><small>District*</small></label>
+                        <select id="districtname" required>
+                            <option value="Alabama School District" selected>Alabama School District</option>
+                            <option value="Northern">Northern</option>
+                            <option value="Southern">Southern</option>
+                            <option value="Eastern">Eastern</option>
+                            <option value="Western">Western</option>
+                            <option value="Middle">Middle</option>
+                        </select>
+                    </div>
+                    <div class="inputFields">
+                        <label for="#username" aria-label="Username" hidden>Please Enter Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username/Email ID*" required>
+                        <p><a href="#">Forgot Username?</a></p>
+                    </div>
+                    <div class="inputFields">
+                        <div class="password-field">
+                            <input type="password" autocomplete="current-password" name="password" id="password" placeholder="Password*" required>
+                            <object data="assets/icons/preview.svg" type="image/svg+xml" role="button" aria-label="Preview" aria-selected="false">.</object>
+                        </div>
+                        <p><a href="#">Forgot Password?</a></p>
+                    </div>
+                    <div class="remember-me">
+                        <object data="assets/icons/checkbox-checked.svg" type="image/svg+xml" role="checkbox" aria-checked="true" aria-label="Remember me?"></object>
+                        <p>Remember Me</p>
+                    </div>
+                    <div class="submit-button" aria-label="Submit Button">
+                        <button type="submit">Log In</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav role="navigation">
+            <div class="reach-us">
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <div class="vl"></div>
+                    </li>
+                    <li>
+                        <a href="#contactUs">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="basic-details">
+                <ul>
+                    <li>
+                        <a href="#" role="link">
+                            <object data="assets/icons/logo-used-in-footer.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="vl"></div>
+                    </li>
+                    <li class="footertext" aria-label="Copyright">
+                        Copyright © 2020-2021
+                    </li>
+                    <li class="footertext zeussystems" aria-label="Company Details">
+                        Zeus Systems Pvt. Ltd.
+                    </li>
+                    <li class="footertext" aria-label="Rights">
+                        All rights reserved.
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="static/js/login.js"></script>
+</body>
+</html>

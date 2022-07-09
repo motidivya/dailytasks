@@ -1,0 +1,57 @@
+$base-color : #1F7A54;
+$test-border: 1px solid black;
+$default-font: QuicksandMedium;
+$default-bottom-border: 1px solid rgba(0, 0, 0, 0.12);
+
+@import 'fonts';
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.vl{
+    border-left: 1px solid #0000001F;
+    height: 24px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: QuicksandMedium;
+    // user-select: none;
+    height: 90vh;
+    
+    body{
+        margin: 0;
+        @import 'dashboard_header';
+
+        main{
+            display: flex;
+            justify-content: center;
+            background: #EEEEEE 0% 0% no-repeat padding-box;
+            width: 100%;
+            .container{
+                background: #EEEEEE 0% 0% no-repeat padding-box;
+                height: 90vh;
+            }
+            section{
+                    border: $test-border;
+                    margin-top: 50px;
+                    border-top: 4px solid #3AC7EC;
+                    border-radius: 2px 2px 0 0;
+                    background-color: #FFFFFF;
+                }
+        }
+
+        @import 'footer';;
+    }
+}

@@ -1,0 +1,16 @@
+header{
+    nav{
+        height: 56px;
+        width: 100%;
+        background: transparent url('../../assets/header-pattern-image.png') 0% 0% padding-box;
+        mix-blend-mode: overlay;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        display: flex;
+        border-bottom: 2px solid #31B9E4;
+        a{
+            margin: auto auto auto 24px;
+        }
+    }
+}

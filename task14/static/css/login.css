@@ -1,0 +1,378 @@
+@font-face {
+  font-family: QuicksandBold;
+  src: url("../../assets/quicksand/static/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: QuicksandLight;
+  src: url("../../assets/quicksand/static/Quicksand-Light.ttf");
+}
+
+@font-face {
+  font-family: QuicksandMedium;
+  src: url("../../assets/quicksand/static/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: QuicksandRegular;
+  src: url("../../assets/quicksand/static/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: QuicksandSemiBold;
+  src: url("../../assets/quicksand/static/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url("../../assets/quicksand/Quicksand-VariableFont_wght.ttf");
+  font-weight: 1 999;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.vl {
+  border-left: 1px solid #0000001F;
+  height: 24px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: QuicksandMedium;
+  height: 90vh;
+}
+
+html body {
+  margin: 0;
+}
+
+html body header nav {
+  height: 56px;
+  width: 100%;
+  background: transparent url("../../assets/header-pattern-image.png") 0% 0% padding-box;
+  mix-blend-mode: overlay;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #31B9E4;
+}
+
+html body header nav a {
+  margin: auto auto auto 24px;
+}
+
+html body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #EEEEEE 0% 0% no-repeat padding-box;
+  width: 100%;
+}
+
+html body main .container {
+  background: #EEEEEE 0% 0% no-repeat padding-box;
+  height: 90vh;
+}
+
+html body main section {
+  width: 488px;
+  border: none;
+  margin-top: 50px;
+  border-top: 4px solid #3AC7EC;
+  border-radius: 2px 2px 0 0;
+  background-color: #FFFFFF;
+}
+
+html body main section .content {
+  margin: 20px 32px 0 32px;
+  border: none;
+}
+
+html body main section .content .section-heading {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main section .content .section-heading .loginheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+html body main section .content .section-heading .loginheading h2 {
+  margin: 0;
+  font-family: QuicksandMedium;
+  color: #222222;
+}
+
+html body main section .content .education {
+  margin: 32px auto 23px auto;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html body main section .content .education ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main section .content .education ul li p {
+  margin: 0;
+}
+
+html body main section .content .education ul li:nth-child(1) {
+  margin-right: 32px;
+}
+
+html body main section .content .selectFields {
+  height: 45px;
+  margin-bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body main section .content .selectFields label small {
+  color: #666666;
+}
+
+html body main section .content .selectFields select {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-position: calc(100% - 10px) center !important;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat;
+  height: 30px;
+  font-size: 16px;
+}
+
+html body main section .content .selectFields select :focus {
+  outline: none;
+}
+
+html body main section .content .selectFields select option {
+  margin: 0;
+  font-size: 16px;
+}
+
+html body main section .content .inputFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+html body main section .content .inputFields input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+}
+
+html body main section .content .inputFields input ::-webkit-input-placeholder {
+  color: #666666;
+}
+
+html body main section .content .inputFields input :-ms-input-placeholder {
+  color: #666666;
+}
+
+html body main section .content .inputFields input ::-ms-input-placeholder {
+  color: #666666;
+}
+
+html body main section .content .inputFields input ::placeholder {
+  color: #666666;
+}
+
+html body main section .content .inputFields p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+html body main section .content .inputFields p a {
+  color: #1F7A54;
+}
+
+html body main section .content .inputFields .password-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main section .content .inputFields .password-field input {
+  width: 100%;
+}
+
+html body main section .content .inputFields .password-field object {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0;
+  margin: 0;
+  height: 20px;
+}
+
+html body main section .content .remember-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body main section .content .remember-me p {
+  margin: 0;
+}
+
+html body main section .content .submit-button {
+  margin-top: 20px;
+  height: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main section .content .submit-button button {
+  height: 40px;
+  width: 44%;
+  background: #3FD28B 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 5px #0000003D;
+          box-shadow: 0px 3px 5px #0000003D;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+}
+
+html body footer {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+html body footer .reach-us {
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+html body footer .reach-us ul li {
+  margin: 0 8px;
+}
+
+html body footer .reach-us ul li a {
+  color: #1F7A54;
+}
+
+html body footer .basic-details {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E0E1E1 0% 0% no-repeat padding-box;
+}
+
+html body footer .basic-details ul li {
+  margin: 0 8px;
+}
+
+html body footer .basic-details ul .footertext {
+  color: #616161;
+  font-size: 12px;
+}
+
+html body footer .basic-details ul .zeussystems {
+  font-family: QuicksandBold;
+}
+/*# sourceMappingURL=login.css.map */
