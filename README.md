@@ -5,6 +5,7 @@
 
 https://user-images.githubusercontent.com/106810540/178162047-6fdb4894-54b8-4c40-bc70-9b3a3d64ef9b.mp4
 
+![quantum_school_schema](https://user-images.githubusercontent.com/106810540/178162167-a741b846-aeb8-4f98-bdf9-be069dc14702.png)
 
 
 ## Task 15 (Friday 1st July 2022)
@@ -24,6 +25,7 @@ https://user-images.githubusercontent.com/106810540/178161612-a54d6130-0f22-4c6a
 
 https://user-images.githubusercontent.com/106810540/178161399-1c24a824-34e9-425c-8f35-244a62858aca.mp4
 
+![Understanding Angular](https://user-images.githubusercontent.com/106810540/178162267-3de95815-eb79-495e-8c36-8444f3beb71d.png)
 
 
 ## Task 12 (Wednesday 29th June 2022)
