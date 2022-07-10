@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+
+// ======================================================================================================
+
+// Fonts Start
+@font-face {
+    font-family: QuicksandBold;
+    src: url('./assets/quicksand/static/Quicksand-Bold.ttf');
+}
+@font-face {
+    font-family: QuicksandLight;
+    src: url('./assets/quicksand/static/Quicksand-Light.ttf');
+}
+@font-face {
+    font-family: QuicksandMedium;
+    src: url('./assets/quicksand/static/Quicksand-Medium.ttf');
+}
+@font-face {
+    font-family: QuicksandRegular;
+    src: url('./assets/quicksand/static/Quicksand-Regular.ttf');
+}
+@font-face {
+    font-family: QuicksandSemiBold;
+    src: url('./assets/quicksand/static/Quicksand-SemiBold.ttf');
+}
+
+// Variable Font
+@font-face {
+    font-family: Quicksand;
+    src: url('./assets/quicksand/Quicksand-VariableFont_wght.ttf');
+    font-weight: 1 999;
+}
+// Fonts End
+
+// ======================================================================================================
+
+// Common Variables Start
+$base-color : #1F7A54;
+$test-border: 1px solid black;
+$default-font: QuicksandMedium;
+$default-bottom-border: 1px solid rgba(0, 0, 0, 0.12);
+// Common Variables Ends
+
+// =======================================================================================================
+
+// Common SCSS Start
+html{
+    font-family: QuicksandMedium;
+    margin: 0;
+    padding: 0;
+    body{
+        padding: 0;
+        margin: 0;
+    }
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.vl{
+    border-left: 1px solid #0000001F;
+    height: 24px;
+}
+// Common SCSS Ends
+
+// ============================================================================================================

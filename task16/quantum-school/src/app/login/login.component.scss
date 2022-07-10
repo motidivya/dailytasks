@@ -1,0 +1,157 @@
+$base-color : #1F7A54;
+$test-border: none;
+$default-font: QuicksandMedium;
+$default-bottom-border: 1px solid rgba(0, 0, 0, 0.12);
+main{
+    display: flex;
+    justify-content: center;
+    background: #EEEEEE 0% 0% no-repeat padding-box;
+    width: 100%;
+    .container{
+        background: #EEEEEE 0% 0% no-repeat padding-box;
+        height: 90vh;
+    }
+    section{
+            width: 488px;
+            border: $test-border;
+            margin-top: 50px;
+            border-top: 4px solid #3AC7EC;
+            border-radius: 2px 2px 0 0;
+            background-color: #FFFFFF;
+            .content{
+                margin: 20px 32px 0 32px;
+                border: $test-border;
+                .section-heading{
+                    border: $test-border;
+                    display: flex;
+                    height: 30px;
+                    align-items: center;
+                    
+                    .loginheading{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        margin: 0;
+                        h2{
+                            margin: 0;
+                            font-family: $default-font;
+                            color: #222222;
+                        }
+                    }
+                }
+                .education{
+                    margin: 32px auto 23px auto;
+                    border: $test-border;
+                    display: flex;
+                    justify-content: flex-start;
+                    ul{
+                        li{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p{
+                                margin: 0;
+                            }
+                            &:nth-child(1){
+                                margin-right: 32px;
+                            }
+                        }
+                    }
+                }
+                .selectFields{
+                    height: 45px;
+                    margin-bottom: 36px;
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        small{
+                            color: #666666;
+                        }
+                    }
+                    select{
+                        border: none;
+                        outline: none;
+                        border-bottom: $default-bottom-border;
+                        appearance:none;
+                        -webkit-appearance:none;
+                        -moz-appearance:none;
+                        -ms-appearance:none;
+                        background-position: calc(100% - 10px) center !important;
+                        background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat;
+                        :focus{
+                            outline: none;
+                        }
+                        height: 30px;
+                        font-size: 16px;
+                        option{
+                            margin: 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .inputFields{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 33px;
+                    margin-bottom: 33px;
+                    input{
+                        border: none;
+                        outline: none;
+                        border-bottom: $default-bottom-border;
+                        font-size: 16px;
+                        ::placeholder{
+                            color: #666666;
+                        }
+                    }
+                    p{
+                        display: flex;
+                        justify-content: flex-end;
+                        text-transform: uppercase;
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 5px;
+                        a{
+                            color: $base-color;
+                        }
+                    }
+                    .password-field{
+                        display: flex;
+                        align-items: center;
+                        input{
+                            width: 100%;
+                        }
+                        object{
+                            border: none;
+                            border-bottom: $default-bottom-border;
+                            padding: 0;
+                            margin: 0;
+                            height: 20px;
+                        }
+                    }
+                }
+                .remember-me{
+                    display: flex;
+                    p{
+                        margin: 0;
+                    }
+                }
+                .submit-button{
+                    margin-top: 20px;
+                    height: 78px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                        height: 40px;
+                        width: 44%;
+                        background: #3FD28B 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 3px 5px #0000003D;
+                        outline: none;
+                        border: none;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+}

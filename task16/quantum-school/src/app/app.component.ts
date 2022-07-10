@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quantum-school';
+  is_logged_in!: boolean;
+
+  ngOnInit(){
+    this.is_logged_in = false;
+  }
 }

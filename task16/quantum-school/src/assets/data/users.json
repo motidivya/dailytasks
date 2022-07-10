@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "school":"District",
+        "state":"Alabama",
+        "district":"Alabama School District",
+        "username_email": "abc@gmail.com",
+        "password":"fakepassword",
+        "rememberme":true
+    },
+    {
+        "id": 2,
+        "school":"Independent school",
+        "state":"Arizona",
+        "district":"Arizona District",
+        "username_email": "def@gmail.com",
+        "password":"fakepassword2",
+        "rememberme":false
+        
+    },
+    {
+        "id": 3,
+        "school":"District",
+        "state":"Texas",
+        "district":"texas Home Area",
+        "username_email": "ghi@gmail.com",
+        "password":"fakepassword3",
+        "rememberme":false   
+    }
+]

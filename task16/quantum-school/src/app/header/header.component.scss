@@ -1,0 +1,99 @@
+$base-color : #3FD28B;
+$test-border: 1px solid black;
+$default-font: QuicksandMedium;
+$default-bottom-border: 1px solid rgba(0, 0, 0, 0.12);
+header{
+    nav{
+        height: 56px;
+        width: 100%;
+        background: transparent url('../../assets/header-pattern-image.png') 0% 0% padding-box;
+        mix-blend-mode: overlay;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            margin: auto auto auto 24px;
+        }
+        .nav-links{
+            display: flex;
+            .panels{
+                height: 56px;
+                display: flex;
+                align-items: center;
+                li{
+                    margin: 19px 16px;
+                    a{
+                        
+                        font-size: 14px;
+                        color: $base-color;
+                        text-transform: uppercase;
+                        font-family: QuicksandMedium;
+                        :hover{
+                            color: #FFFFFF;
+                            border-bottom: 4px solid #FFFFFF;
+                        }
+                    }
+                    @media only screen and (max-width:900px){
+                        display: none;
+                    }
+                    :hover{
+                        padding-bottom: 15px;
+                        color: #FFFFFF;
+                        border-bottom: 4px solid #FFFFFF;
+                    }
+                }
+                .active{
+                    padding-bottom: 15px;
+                    color: #FFFFFF;
+                    border-bottom: 4px solid #FFFFFF;
+                }
+                @media only screen and (max-width: 900px){
+                    width: 280px;
+                    min-height: 288px;
+                    position: absolute;
+                    margin-top: 62px;
+                    background-color: #FFFFFF;
+                    flex-direction: column;
+                    display: flex;
+                    margin-left: -78px;
+                    padding: 0;
+                    z-index: 99999;
+                    li{
+                        width: 100%;
+                        min-height: 48px;
+                        margin: 0;
+                        display: block;
+                        color: #3FD28B;
+
+                    }
+                }
+            }
+            .icons{
+                height: 56px;
+                display: flex;
+                align-items: center;
+                li{
+                    margin: 19px 16px;
+                }
+            }
+            .hamburger{
+                margin: 19px 16px;
+                display: none;
+                @media only screen and (max-width: 900px){
+                    display: block;
+                    :hover{
+                        path{
+                            &:nth-child(2){
+                                fill: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

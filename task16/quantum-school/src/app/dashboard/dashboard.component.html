@@ -1,0 +1,76 @@
+<!-- <p>dashboard works!</p>
+<ul>
+    <div *ngFor="let course of courses">
+        <h1>{{ course.name }}</h1>
+    </div>
+</ul> -->
+<main>
+    <div class="container">
+        <div class="header-tab">
+            <div class="header-tab-heading active-tab">
+                <img src="assets/icons/courses.svg" alt="Courses icon">
+                <h2>4</h2>
+                <h3>Courses</h3>
+            </div>
+            <div class="header-tab-heading">
+                <img src="assets/icons/classes.svg" alt="Classes icon">
+                <h2>4</h2>
+                <h3>Classes</h3>
+            </div>
+        </div>
+        <div class="details">
+            <div class="results">Showing 4 of 4 courses</div>
+            <div class="sort">
+                <p>Sort By:</p>
+                <input type="text" name="course-name" id="course-name" placeholder="Course Name" value="Course Name">
+                <img src="assets/icons/arrow-down.svg" alt="Arow down icon">
+                <img src="assets/icons/sort.svg" alt="Sort icon">
+            </div>
+        </div>
+        <div class="courses" *ngFor="let course of courses">
+
+            <!-- Data Binding Starts -->
+
+            <div class="item">
+                <div class="course-content">
+                    <div class="course-image">
+                        <img src="{{ course.image }}" alt="Course1 Description image">
+                    </div>
+                    <div class="course-details">
+                        <div class="course-heading">
+                            <h3>{{ course.name }}</h3>
+                            <img class = "star" src="assets/icons/favourite.svg" alt="Favourite Icon">
+                        </div>
+                        <div class="subject">
+                            <p>{{ course.subject.name }}</p>
+                            <p>Grade {{ course.subject.grade }}</p>
+                            <p>+{{ course.subject.additional_points }}</p>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>{{ course.units }}</strong> Units</p>
+                            <p><strong>{{ course.lessons }}</strong> Lessons</p>
+                            <p><strong>{{ course.topics }}</strong> Topics</p>
+                        </div>
+                        <div class="class">
+                            <input type="text" name="class" id="class" placeholder="No Classes" value="Mr. Frank's Class B">
+                            <img src="assets/icons/arrow-down.svg" alt="Arrow down icon">
+                        </div>
+                        <div class="class-details">
+                            <p>{{ course.students }} Students</p>
+                            <p>{{ course.start_date }}-{{ course.end_date }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-navigation">
+                    <img src="assets/icons/preview.svg" [ngClass]="{'disabled': !course.preview }" alt="Preview Icon">
+                    <img src="assets/icons/manage-course.svg" [ngClass]="{'disabled': !course.manage }" alt="manage Course">
+                    <img src="assets/icons/grade-submissions.svg" [ngClass]="{'disabled': !course.grade_submissions }" alt="Grade Submissions">
+                    <img src="assets/icons/reports.svg" [ngClass]="{'disabled': !course.reports }" alt="Reports Icon">
+                </div>
+            </div>
+
+            <!-- Data Binding Ends -->
+
+        </div>
+    </div>
+</main>
