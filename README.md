@@ -1,5 +1,41 @@
 # dailytasks
-Here will be all the daily tasks that i get.
+
+## Task 16 (Monday 4th July 2022)
+
+
+https://user-images.githubusercontent.com/106810540/178161862-839b40cd-630d-4ff3-b1aa-555f1fa8badd.mp4
+
+
+
+## Task 15 (Friday 1st July 2022)
+![image](https://user-images.githubusercontent.com/106810540/178161693-9a45de90-65b1-42cb-95a0-4fcf4950b3da.png)
+
+
+## Task 14 (Sunday 10th July 2022)
+
+
+https://user-images.githubusercontent.com/106810540/178161612-a54d6130-0f22-4c6a-a6e8-19dc6bf00105.mp4
+
+
+
+
+## Task 13 (Saturday 9th July 2022)
+
+
+https://user-images.githubusercontent.com/106810540/178161399-1c24a824-34e9-425c-8f35-244a62858aca.mp4
+
+
+
+## Task 12 (Wednesday 29th June 2022)
+
+
+https://user-images.githubusercontent.com/106810540/178161203-e3041b64-afae-439b-8efe-57d6c39df1c5.mp4
+
+
+
+## Task 11 (Saturday 25th June 2022)
+![walk_in_schema](https://user-images.githubusercontent.com/106810540/178161024-367df223-96ea-49c0-a88b-b03dbe5c1acf.png)
+
 
 ## Task 10 (Friday 24th June 2022)
 
