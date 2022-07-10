@@ -19,7 +19,8 @@
             "manage":true,
             "grade_submissions":true,
             "reports":true,
-            "expired":false
+            "expired":false,
+            "favourite":true
         },
         {
             "name": "Displacement, Velocity and Speed",
@@ -40,7 +41,8 @@
             "manage":false,
             "grade_submissions":false,
             "reports":true,
-            "expired":false
+            "expired":false,
+            "favourite":true
         },
         {
             "name": "Introduction to Biology:Micro organisms and how they affect the environment",
@@ -61,7 +63,8 @@
             "manage":false,
             "grade_submissions":false,
             "reports":true,
-            "expired":false
+            "expired":false,
+            "favourite":true
         },
         {
             "name": "Introduction to High School Mathematics",
@@ -82,7 +85,8 @@
             "manage":true,
             "grade_submissions":true,
             "reports":true,
-            "expired":true
+            "expired":true,
+            "favourite":true
         }
     
     ]
