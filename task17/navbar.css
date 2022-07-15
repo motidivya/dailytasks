@@ -1,0 +1,279 @@
+@font-face {
+  font-family: QuicksandBold;
+  src: url("assets/quicksand/static/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: QuicksandLight;
+  src: url("assets/quicksand/static/Quicksand-Light.ttf");
+}
+
+@font-face {
+  font-family: QuicksandMedium;
+  src: url("assets/quicksand/static/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: QuicksandRegular;
+  src: url("assets/quicksand/static/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: QuicksandSemiBold;
+  src: url("assets/quicksand/static/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url("assets/quicksand/Quicksand-VariableFont_wght.ttf");
+  font-weight: 1 999;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: QuicksandMedium;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+html body header nav {
+  height: 56px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/header-pattern-image.png");
+  background-color: #25313F;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body header nav .brand svg {
+  height: 36px;
+}
+
+html body header nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body header nav .menu .tabs li .dropdown .controls button {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  color: #3FD28B;
+}
+
+html body header nav .menu .tabs li .dropdown .controls span {
+  display: none;
+}
+
+html body header nav .menu .tabs li .dropdown .dropdown-content {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  html body header nav .menu .tabs {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    top: 56px;
+    right: 16px;
+    width: 280px;
+    min-height: 240px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: 0 13px 20px #0000003D;
+            box-shadow: 0 13px 20px #0000003D;
+    border-radius: 2px;
+  }
+  html body header nav .menu .tabs li {
+    height: 48px;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  html body header nav .menu .tabs li .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 24px 0 16px;
+    width: 100%;
+  }
+  html body header nav .menu .tabs li .dropdown .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  html body header nav .menu .tabs li .dropdown .controls button {
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    color: #1F7A54;
+  }
+  html body header nav .menu .tabs li .dropdown .controls button p {
+    margin: 0;
+  }
+  html body header nav .menu .tabs li .dropdown .controls span {
+    display: block;
+    color: #1F7A54;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    cursor: pointer;
+  }
+  html body header nav .menu .tabs li .dropdown .dropdown-content {
+    position: relative;
+  }
+  html body header nav .menu .tabs li .dropdown .dropdown-content a {
+    top: 19px;
+    right: 19px;
+    background-color: #F3F3F3;
+    height: 56px;
+    font-style: none;
+    text-decoration: none;
+    color: #1F7A54;
+    text-transform: uppercase;
+  }
+  html body header nav .menu .tabs .dropdown-content {
+    display: block;
+  }
+}
+
+html body header nav .menu .icons li .badge {
+  position: relative;
+  background-color: #2A7FF3;
+  font-size: 12px;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -8px;
+  right: 6px;
+  color: #FFFFFF;
+}
+
+html body header nav .menu .icons li .tbadge {
+  background-color: #FFFFFF;
+  height: 16px;
+  width: 16px;
+  color: #000000;
+}
+
+html body header nav .menu .icons li:nth-child(4) {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  html body header nav .menu .icons li:nth-child(4) {
+    display: block;
+  }
+  html body header nav .menu .icons li:nth-child(4) :hover path:nth-child(2) {
+    fill: #FFFFFF;
+  }
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 19px 16px;
+}
+/*# sourceMappingURL=navbar.css.map */

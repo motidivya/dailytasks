@@ -19,15 +19,17 @@
             </div>
         </div>
         <div class="details">
-            <div class="results">Showing 4 of 4 courses</div>
+            <div class="results">Showing {{ filteredCourses.length }} of 4 courses</div>
             <div class="sort">
                 <p>Sort By:</p>
-                <input type="text" name="course-name" id="course-name" placeholder="Course Name" value="Course Name">
-                <img src="assets/icons/arrow-down.svg" alt="Arow down icon">
-                <img src="assets/icons/sort.svg" alt="Sort icon">
+                <select (changed)="sort($event)" name="sortby" id="sortby">
+                    <option value="name" selected>Course Name</option>
+                    <option value="subject">Course Subject</option>
+                </select>
+                <img  src="assets/icons/sort.svg" alt="Sort icon">
             </div>
         </div>
-        <div class="courses" *ngFor="let course of courses">
+        <div class="courses" *ngFor="let course of filteredCourses">
 
             <!-- Data Binding Starts -->
 

@@ -1,0 +1,15 @@
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\bin\Debug\net6.0\MyApp.exe
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\bin\Debug\net6.0\MyApp.deps.json
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\bin\Debug\net6.0\MyApp.runtimeconfig.json
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\bin\Debug\net6.0\MyApp.dll
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\bin\Debug\net6.0\MyApp.pdb
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\MyApp.csproj.AssemblyReference.cache
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\MyApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\MyApp.AssemblyInfoInputs.cache
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\MyApp.AssemblyInfo.cs
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\MyApp.csproj.CoreCompileInputs.cache
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\MyApp.dll
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\refint\MyApp.dll
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\MyApp.pdb
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\MyApp.genruntimeconfig.cache
+C:\Users\divyesh.vishwakarma\Desktop\Divyesh\Office\Training\dailytasks\task18\MyApp\obj\Debug\net6.0\ref\MyApp.dll
