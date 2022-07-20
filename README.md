@@ -1,12 +1,5 @@
 # dailytasks
 
-## Task 17 (Wednesday 6th July 2022)
-
-
-https://user-images.githubusercontent.com/106810540/179932843-b00a99a2-74c3-455a-ad27-0e41edfd717a.mp4
-
-
-
 ## Task 16 (Monday 4th July 2022)
 
 
