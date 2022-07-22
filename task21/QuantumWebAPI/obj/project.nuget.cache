@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "PtZcicL2w2BsZxuH0WntULvHXJFEd8g3EZOGaMXrTS8A8/FqgbSTd+JehR/BgkFQTBIWH8Qv2Vu4aWH4auMA2Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\divyesh.vishwakarma\\Desktop\\Divyesh\\Office\\Training\\dailytasks\\task21\\QuantumWebAPI\\QuantumWebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\divyesh.vishwakarma\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\divyesh.vishwakarma\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\divyesh.vishwakarma\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\divyesh.vishwakarma\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\divyesh.vishwakarma\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\divyesh.vishwakarma\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
