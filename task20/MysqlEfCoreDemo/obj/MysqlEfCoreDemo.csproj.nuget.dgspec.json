@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\divyesh.vishwakarma\\Desktop\\Divyesh\\Office\\Training\\dailytasks\\task20\\MysqlEfCoreDemo\\MysqlEfCoreDemo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\divyesh.vishwakarma\\Desktop\\Divyesh\\Office\\Training\\dailytasks\\task20\\MysqlEfCoreDemo\\MysqlEfCoreDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\divyesh.vishwakarma\\Desktop\\Divyesh\\Office\\Training\\dailytasks\\task20\\MysqlEfCoreDemo\\MysqlEfCoreDemo.csproj",
+        "projectName": "MysqlEfCoreDemo",
+        "projectPath": "C:\\Users\\divyesh.vishwakarma\\Desktop\\Divyesh\\Office\\Training\\dailytasks\\task20\\MysqlEfCoreDemo\\MysqlEfCoreDemo.csproj",
+        "packagesPath": "C:\\Users\\divyesh.vishwakarma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\divyesh.vishwakarma\\Desktop\\Divyesh\\Office\\Training\\dailytasks\\task20\\MysqlEfCoreDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\divyesh.vishwakarma\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MySql.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
