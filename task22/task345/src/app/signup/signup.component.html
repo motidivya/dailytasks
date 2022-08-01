@@ -1,0 +1,31 @@
+<main>
+    <h1>Simple Form</h1>
+    <div class="signup">
+        <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate action="" method="post">
+            <!-- {{ userForm.value | json }}
+            <br>
+            {{ userModel | json }} -->
+            <div class="username">
+                <label for="username"><strong>Username</strong></label>
+                <input type="text" #username="ngModel" name="username" placeholder="Username" [(ngModel)]="userModel.username" minlength="4" [class.is-invalid]="usernameHasError && username.touched" (blur)="validateUsername(username.value)" (change)="validateUsername(username.value)" required>
+                <div *ngIf="username.errors && (username.invalid && username.touched || usernameHasError)">
+                    <small class="text-danger" *ngIf="username.errors['required'] && username.touched">Username is required</small>
+                    <small class="text-danger" *ngIf="usernameHasError && username.touched">Username must start with "@"</small>
+                    <small class="text-danger" *ngIf="username.errors['minlength'] && username.touched">Username must be atleast 3 characters long</small>
+                    <small class="text-danger" *ngIf="(username.errors || usernameHasError) && username.touched">Username must start with @</small>
+                </div>
+            </div>
+            <div class="email">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" #email="ngModel" [(ngModel)]="userModel.email" [class.is-invalid]="email.invalid && email.touched" name="email" id="email" placeholder="Email" required>
+                <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email is required and must be in correct email syntax</small>
+            </div>
+            <div class="password">
+                <label for="password"><strong>Password</strong></label>
+                <input type="password" #password="ngModel" name="password" id="password" placeholder="Password" minlength="8" required [(ngModel)]="userModel.password">
+                <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required and must be atleast 8 characters long</small>
+            </div>
+            <button type="submit" class="btn btn-primary m-2" [disabled]="userForm.form.invalid || usernameHasError">Register</button>
+        </form>
+    </div>
+</main>

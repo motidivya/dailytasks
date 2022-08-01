@@ -1,0 +1,20 @@
+<main>
+    <h1>Simple Form</h1>
+    <div class="signup">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" action="" method="post">
+            <div class="username">
+                <label for="username"><strong>Username</strong></label>
+                <input type="text" name="username" id="username" placeholder="Username" forControlName = "username" usernameValidator required>
+            </div>
+            <div class="email">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" placeholder="Email" forControlName = "username" required>
+            </div>
+            <div class="password">
+                <label for="password"><strong>Password</strong></label>
+                <input type="password" name="password" id="password" placeholder="Password" minlength="8" forControlName = "username" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</main>

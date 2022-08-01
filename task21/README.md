@@ -12,9 +12,9 @@ dotnet new webapi -o ProjectName
 
 ### Setup SQL
 1. Open MySQL Workbench
-2. Create A New Connection - Remember Connection Name
+2. Create A New Connection
 3. In the new connection create a new schema
-4. Forward engineer the schema into a file OR Open existing sql script and run it to create relevant tables
+4. Forward engineer the schema into a file OR Open existing sql script and run it to create relevant tables remember this file name or database name
 
 ### Add Connection String =>
 - Go to appsettings.json and add the following Code
@@ -29,7 +29,7 @@ dotnet new webapi -o ProjectName
 }
 ```
 - Our Connection string value is 
-  _Server=localhost;Database=ConnectionName;Uid=root;Pwd=root_
+  _Server=localhost;Database=DatabaseName;Uid=root;Pwd=root_
 
 
 ### Install these Packages =>

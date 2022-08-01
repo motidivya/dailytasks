@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+    body{
+        main{
+            .initial, .final {
+                font-size: 20px;
+                margin: 0;
+                margin-top: 12px;
+                // display: none;
+            }
+            .initial{
+                color: brown;
+                margin-left: 10px;
+                animation: 3s disappear;
+            }
+            .final{
+                margin-left: 100px;
+            }
+            .one, .two{
+                display: flex;
+            }
+            .highlights{
+                margin-bottom: 0;
+            }
+            .one{
+                .highlights{
+                    &:hover{
+                        background-color: red;
+                    }
+                }
+            }
+            .two{
+                .highlights{
+                    &:hover{
+                        background-color: violet;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@keyframes disappear {
+    0% {
+        display: block;
+    }
+    100% {
+        display: none;
+    }
+}
