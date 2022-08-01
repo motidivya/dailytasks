@@ -1,4 +1,24 @@
-<p>home works!</p>
-<div *ngIf="userIsLoggedIn">
-    <p>Logged In as {{ user.username | json }}</p>
-</div>
+<main>
+    <p>home works!</p>
+    <div *ngIf="user && users">
+        <p>Logged In as {{ user.username }}</p>
+        <!-- {{ users | json }} -->
+        <table>
+            <caption>All Users</caption>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+            </tr>
+            <tr *ngFor="let a_user of users ">
+                <td>{{ a_user.username }}</td>
+                <td>{{ a_user.email }}</td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="!user">
+        Please
+        <a href="login">login</a>
+        or
+        <a href="signup">Signup</a>
+    </div>
+</main>

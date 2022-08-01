@@ -11,19 +11,13 @@ export class SignupComponent implements OnInit {
 
   userModel = new User('', '', '');
   usernameHasError = true;
-
   constructor(private router: Router) { }
 
   ngOnInit(): void {
 
   }
   onSubmit(){
-    var retrievedObject = JSON.parse(localStorage.getItem("Users") || '{}');
-    if(retrievedObject.value){
-      console.log(typeof(retrievedObject.value));
-    }else{
-      localStorage.setItem('Users',JSON.stringify(this.userModel));
-    }
+    this.addEntry();
     this.router.navigate(['login']);
   }
   
@@ -36,4 +30,22 @@ export class SignupComponent implements OnInit {
       this.usernameHasError = true;
     }
   }
+
+  addEntry() {
+    // Parse any JSON previously stored in allEntries
+    var existingUsers = JSON.parse(localStorage.getItem("allUsers")!);
+    if(existingUsers == null) existingUsers = [];
+    var newUsername = this.userModel.username;
+    var newEmail = this.userModel.email;
+    var newPassword = this.userModel.password;
+    var user = {
+        "username": newUsername,
+        "email": newEmail,
+        "password": newPassword
+    };
+    // localStorage.setItem("user", JSON.stringify(user));
+    // Save allEntries back to local storage
+    existingUsers.push(user);
+    localStorage.setItem("allUsers", JSON.stringify(existingUsers));
+  };
 }

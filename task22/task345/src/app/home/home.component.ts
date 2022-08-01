@@ -7,15 +7,20 @@ import { User } from '../user';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  userIsLoggedIn = false;
   user!: User;
+  users!:[User];
   constructor() { }
 
   checkLoggedIn(): void{
-    var getLogin = JSON.parse(localStorage.getItem('userIsLoggedIn') || '{}');
-    if(getLogin){
-      this.userIsLoggedIn = true;
-      this.user = JSON.parse(localStorage.getItem('Users') || '{}')
+    try{
+      var users = JSON.parse(localStorage.getItem('allUsers')!);
+      this.users = users;
+      var user = JSON.parse(localStorage.getItem('user')!);
+      this.user = user;
+      
+    }
+    catch{
+      console.log('Not logged in');
     }
   }
   ngOnInit(): void {

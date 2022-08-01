@@ -1,9 +1,12 @@
 <main>
     <h1>Login</h1>
     <div class="login">
+        <div class="alert alert-danger" [class.d-none]="userNotFound && !submitted" role="alert">
+            User Not Found, <a href="signup">Register now ?</a>
+        </div>
         <form #loginForm="ngForm" (ngSubmit)="onSubmit()" novalidate action="" method="post">
-            {{ loginForm.value | json }}
-            <br>
+            <!-- {{ loginForm.value | json }} -->
+            <!-- <br> -->
             <!-- {{ userModel | json }} -->
             <div class="username">
                 <label for="username"><strong>Username</strong></label>

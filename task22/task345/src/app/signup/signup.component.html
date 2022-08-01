@@ -13,19 +13,26 @@
                     <small class="text-danger" *ngIf="usernameHasError && username.touched">Username must start with "@"</small>
                     <small class="text-danger" *ngIf="username.errors['minlength'] && username.touched">Username must be atleast 3 characters long</small>
                     <small class="text-danger" *ngIf="(username.errors || usernameHasError) && username.touched">Username must start with @</small>
+                    <!-- <small class="text-danger" *ngIf="existingUser">This username is already used</small> -->
                 </div>
             </div>
             <div class="email">
+                <!-- <label for="email" [class.d-none]="existingUser"><strong>Email</strong></label> -->
                 <label for="email"><strong>Email</strong></label>
+                <!-- <input type="email" [class.d-none]="existingUser" #email="ngModel" [(ngModel)]="userModel.email" [class.is-invalid]="email.invalid && email.touched" name="email" id="email" placeholder="Email" required> -->
                 <input type="email" #email="ngModel" [(ngModel)]="userModel.email" [class.is-invalid]="email.invalid && email.touched" name="email" id="email" placeholder="Email" required>
                 <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email is required and must be in correct email syntax</small>
             </div>
             <div class="password">
+                <!-- <label for="password" [class.d-none]="existingUser"><strong>Password</strong></label> -->
                 <label for="password"><strong>Password</strong></label>
+                <!-- <input type="password" [class.d-none]="existingUser" #password="ngModel" name="password" id="password" placeholder="Password" minlength="8" required [(ngModel)]="userModel.password"> -->
                 <input type="password" #password="ngModel" name="password" id="password" placeholder="Password" minlength="8" required [(ngModel)]="userModel.password">
                 <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required and must be atleast 8 characters long</small>
             </div>
-            <button type="submit" class="btn btn-primary m-2" [disabled]="userForm.form.invalid || usernameHasError">Register</button>
+            <!-- <button type="submit" class="btn btn-primary m-2" [class.d-none]="existingUser" [disabled]="userForm.form.invalid || usernameHasError">Register</button> -->
+            <button type="submit" class="btn btn-primary m-2" [disabled]="userForm.form.invalid && usernameHasError">Register</button>
+            <!-- <a href="login" [class.d-none]="!existingUser">Login Instead?</a> -->
         </form>
     </div>
 </main>
