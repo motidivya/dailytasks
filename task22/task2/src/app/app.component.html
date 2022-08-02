@@ -2,20 +2,17 @@
   <h1>My First Attribute Directive</h1>
   <h3>Pick a highlight color</h3>
   <div class="colors">
-    <!-- <input type="radio" #green name="color" id="green" value="green" (change)="changeColor($event)">Green -->
-    <input type="radio" #green name="color" id="green" value="green" (change)="changeColor($event)">Green
-    <!-- <input type="radio" #yellow name="color" id="yellow" value="yellow" (change)="changeColor($event)">Yellow -->
-    <input type="radio" #yellow name="color" id="yellow" value="yellow" (change)="changeColor($event)">Yellow
-    <!-- <input type="radio" #cyan name="color" id="cyan" value="cyan" (change)="changeColor($event)">Cyan -->
-    <input type="radio" #cyan name="color" id="cyan" value="cyan" (change)="changeColor($event)">Cyan
+    <input type="radio" #green name="color" id="green" value="green" (change)="setColor($event)">Green
+    <input type="radio" #yellow name="color" id="yellow" value="yellow" (change)="setColor($event)">Yellow
+    <input type="radio" #cyan name="color" id="cyan" value="cyan" (change)="setColor($event)">Cyan
   </div>
   <div class="one">
-    <p class="highlights" #highlight1>Highlight me!</p>
-    <p class="initial" [@fadeOut]="currentState">no default-color binding</p>
+    <p class="highlights" [ngStyle]="hover1?{backgroundColor:color}:{backgroundColor:'white'}" (mouseover)="hover1=true" (mouseout)="hover1=false">Highlight me!</p>
+    <p class="initial" [@fadeOut]="'initial'?'final':'initial'">no default-color binding</p>
   </div>
-  <p class="final">color choice takes over</p>
+  <p class="final" [ngStyle]="{color:getColor()}" [@fadeOut]="changed?'notchanged':'changed'">color choice takes over</p>
   <div class="two">
-    <p class="highlights" #highlight2 [@fadeOut]="currentState">Highlight me too!</p>
-    <p class="initial">with 'violet' default-color binding</p>
+    <p class="highlights" [ngStyle]="hover2?{backgroundColor:color}:{backgroundColor:'white'}" (mouseover)="hover2=true" (mouseout)="hover2=false">Highlight me too!</p>
+    <p class="initial" [@fadeOut]="'initial'?'final':'initial'">with 'violet' default-color binding</p>
   </div>
 </main>
