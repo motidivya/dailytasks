@@ -13,7 +13,7 @@ export class CustomerService {
 
   getCustomers():Observable<any>{
     var response = JSON.parse(JSON.stringify(this.httpClient.get(this.url)));
-    if(response['source']['source']['source']){
+    if(response['source']){
       return this.httpClient.get('../../assets/data.json');
     }
     return this.httpClient.get(this.url);
