@@ -1,19 +1,36 @@
 <main>
     <p>home works!</p>
-    <div *ngIf="user && users">
+    <div *ngIf="user && (customers || users)">
         <p>Logged In as {{ user.username }}</p>
         <!-- {{ users | json }} -->
+        <table>
+            <caption>All Customers</caption>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr *ngFor="let customer of customers ">
+                <td>{{ customer.Name }}</td>
+                <td>{{ customer.City }}</td>
+                <td>{{ customer.Country }}</td>
+                
+            </tr>
+        </table>
+        
         <table>
             <caption>All Users</caption>
             <tr>
                 <th>Username</th>
                 <th>Email</th>
             </tr>
-            <tr *ngFor="let a_user of users ">
+            <tr *ngFor="let a_user of users | paginate: { itemsPerPage: 1, currentPage: page }">
                 <td>{{ a_user.username }}</td>
                 <td>{{ a_user.email }}</td>
             </tr>
         </table>
+        <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
     </div>
     <div *ngIf="!user">
         Please

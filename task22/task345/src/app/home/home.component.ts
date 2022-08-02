@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
+import { CustomerService } from '../services/customer.service';
 
 @Component({
   selector: 'app-home',
@@ -9,8 +10,10 @@ import { User } from '../user';
 export class HomeComponent implements OnInit {
   user!: User;
   users!:[User];
-  constructor() { }
-
+  page:number = 1;
+  customers!:any;
+  
+  constructor(private service: CustomerService) { }
   checkLoggedIn(): void{
     try{
       var users = JSON.parse(localStorage.getItem('allUsers')!);
@@ -23,8 +26,13 @@ export class HomeComponent implements OnInit {
       console.log('Not logged in');
     }
   }
+   
   ngOnInit(): void {
     this.checkLoggedIn();
+    this.service.getCustomers().subscribe(response => {
+      this.customers = response;
+      console.log(response);
+    });
   }
 
 }
