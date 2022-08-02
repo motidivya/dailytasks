@@ -1,6 +1,5 @@
 <main>
-    <p>home works!</p>
-    <div *ngIf="user && (customers || users)">
+    <div class="m-3" *ngIf="user && (customers || users)">
         <p>Logged In as {{ user.username }}</p>
         <!-- {{ users | json }} -->
         <table>
@@ -10,7 +9,7 @@
                 <th>City</th>
                 <th>Country</th>
             </tr>
-            <tr *ngFor="let customer of customers ">
+            <tr *ngFor="let customer of customers.records | paginate: { itemsPerPage: 5, currentPage: page }">
                 <td>{{ customer.Name }}</td>
                 <td>{{ customer.City }}</td>
                 <td>{{ customer.Country }}</td>
@@ -18,17 +17,17 @@
             </tr>
         </table>
         
-        <table>
+        <!-- <table>
             <caption>All Users</caption>
             <tr>
                 <th>Username</th>
                 <th>Email</th>
             </tr>
-            <tr *ngFor="let a_user of users | paginate: { itemsPerPage: 1, currentPage: page }">
+            <tr *ngFor="let a_user of users ">
                 <td>{{ a_user.username }}</td>
                 <td>{{ a_user.email }}</td>
             </tr>
-        </table>
+        </table> -->
         <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
         <pagination-controls (pageChange)="page = $event"></pagination-controls>
     </div>

@@ -29,9 +29,8 @@ export class HomeComponent implements OnInit {
    
   ngOnInit(): void {
     this.checkLoggedIn();
-    this.service.getCustomers().subscribe(response => {
+    this.service.getCustomers().subscribe(response=>{
       this.customers = response;
-      console.log(response);
     });
   }
 
