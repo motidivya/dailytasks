@@ -1,3 +1,46 @@
 <main>
-  <div [@rubberBand]="true?false:true">Hello</div>
+  <!-- <div class="example-container">
+    <ul class="drag-area example-list" cdkDropList [cdkDropListData]="elementList" (cdkDropListDropped)="drop($event)">
+      <li class="example-box" (click)="toggleListItemOnOneClick($event)" (ondrag)="myDrag($event)" *ngFor="let element of elementList " cdkDrag>
+        <p>{{ element }}</p>
+      </li>
+    </ul>
+  </div> -->
+
+  <!-- <div class="example-conatiner">
+    <ul class="drop-area example-list" [cdkDropListData]="finalElementList" cdkDropList (cdkDropListDropped)="drop($event)"> -->
+      <!-- <li *ngFor="let finalElement of finalElementList "></li> -->
+      <!-- <li class="example-box" (click)="toggleListItemOnOneClick($event)" *ngFor="let finalElement of finalElementList " cdkDrag [cdkDragData]="finalElement">
+        <p>{{ finalElement }}</p>
+      </li>
+    </ul>
+
+  </div> -->
+  <div cdkDropListGroup>
+    <div>
+  
+      <div
+        cdkDropListOrientation="horizontal"
+        cdkDropList
+        class="myList"
+        [cdkDropListData]="todo"
+        (cdkDropListDropped)="drop($event)">
+        <div class="animate__animated example-box" [ngClass]="{'animate__slideInLeft': item == 'A', 'animate__slideInUp': item == 'B', 'animate__slideInRight': item == 'C'}" (click)="elementClicked($event)" *ngFor="let item of todo" cdkDrag>
+          {{ item }}
+        </div>
+      </div>
+    </div>
+  
+    <div class="example-container">
+  
+      <div
+        cdkDropListOrientation="horizontal"
+        cdkDropList
+        [cdkDropListData]="done"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <div class="example-box animate__animated animate__zoomOut" [ngClass]="{'animate__zoomOut': timeToExit}" (click)="elementClicked($event)" *ngFor="let item of done" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  </div>
 </main>
